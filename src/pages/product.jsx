@@ -113,13 +113,13 @@ export const ProductListing = () => {
           <div className="product-details">
             <div className="product-header">
               <h3 className="product-name">{product.name}</h3>
-              <button
+              {/* <button
                 onClick={() => toggleFeaturedProduct(product._id)}
                 className="star-button"
                 aria-label={product.isFeatured ? "Remove from featured" : "Add to featured"}
               >
                 {product.isFeatured ? "★" : "☆"}
-              </button>
+              </button> */}
             </div>
 
             <span className="product-category">{product.category}</span>
@@ -132,9 +132,9 @@ export const ProductListing = () => {
               <span className="product-price">
                 Rs {product.price}
               </span>
-              <div className="stock-badge">
+              {/* <div className="stock-badge">
                 <span className="stock-text">Stock: {product.stock || 0}</span>
-              </div>
+              </div> */}
             </div>
 
             <div className="action-buttons">
@@ -145,7 +145,7 @@ export const ProductListing = () => {
                 Delete
               </button>
 
-              <button
+              {/* <button
                 onClick={() => {
                   setEditingProduct(product);
                   setShowModal(true);
@@ -153,7 +153,7 @@ export const ProductListing = () => {
                 className="action-button edit-button"
               >
                 Edit
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
